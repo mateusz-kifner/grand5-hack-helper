@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bbduxrncnwucr"]
+
+[ext_resource type="Script" path="res://Circle.gd" id="1_24xp0"]
+[ext_resource type="StyleBox" uid="uid://vyqt5v57yyfn" path="res://Circle.stylebox" id="1_gytrb"]
+
+[node name="Button" type="Button"]
+custom_minimum_size = Vector2(180, 180)
+offset_right = 200.0
+offset_bottom = 200.0
+theme_override_styles/normal = ExtResource("1_gytrb")
+theme_override_styles/hover = ExtResource("1_gytrb")
+theme_override_styles/pressed = ExtResource("1_gytrb")
+theme_override_styles/disabled = ExtResource("1_gytrb")
+theme_override_styles/focus = ExtResource("1_gytrb")
+script = ExtResource("1_24xp0")
+
+[connection signal="toggled" from="." to="." method="_on_toggled"]
